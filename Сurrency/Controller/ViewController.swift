@@ -14,8 +14,6 @@ class ViewController: UIViewController {
     private let identifier = "mycell"
     private let outputIdentifier = "output"
     private let refreshConrol = UIRefreshControl()
-    private let apikey = "71f3bc8d41181084e31b"
-    private let url = "https://free.currconv.com/api/v7/convert"
     private var myCurrency: Response?
     private var data = 0.0
     //MARK:- Update data
