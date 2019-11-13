@@ -10,6 +10,8 @@
 		C40E37AD236EC981004B3BD5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40E37AC236EC981004B3BD5 /* NetworkManager.swift */; };
 		C4255E32234FC12100918EAC /* OutputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4255E30234FC12100918EAC /* OutputTableViewCell.swift */; };
 		C4255E33234FC12100918EAC /* OutputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4255E31234FC12100918EAC /* OutputTableViewCell.xib */; };
+		C4AD949C2370AC0A002F0120 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD949B2370AC0A002F0120 /* CoreDataHelper.swift */; };
+		C4AD949F2370AC28002F0120 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4AD949D2370AC28002F0120 /* Model.xcdatamodeld */; };
 		C4BF209423281D1A005DA87C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF209223281D1A005DA87C /* TableViewCell.swift */; };
 		C4BF209523281D1A005DA87C /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4BF209323281D1A005DA87C /* TableViewCell.xib */; };
 		C4FA9A60232505010024D8C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FA9A5F232505010024D8C3 /* AppDelegate.swift */; };
@@ -24,6 +26,8 @@
 		C40E37AC236EC981004B3BD5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C4255E30234FC12100918EAC /* OutputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputTableViewCell.swift; sourceTree = "<group>"; };
 		C4255E31234FC12100918EAC /* OutputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OutputTableViewCell.xib; sourceTree = "<group>"; };
+		C4AD949B2370AC0A002F0120 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		C4AD949E2370AC28002F0120 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		C4BF209223281D1A005DA87C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		C4BF209323281D1A005DA87C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		C4FA9A5C232505010024D8C3 /* Сurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Сurrency.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				C4FA9A712325052C0024D8C3 /* Response.swift */,
+				C4AD949D2370AC28002F0120 /* Model.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -81,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				C40E37AC236EC981004B3BD5 /* NetworkManager.swift */,
+				C4AD949B2370AC0A002F0120 /* CoreDataHelper.swift */,
 			);
 			path = "Network Manager";
 			sourceTree = "<group>";
@@ -198,6 +204,8 @@
 				C40E37AD236EC981004B3BD5 /* NetworkManager.swift in Sources */,
 				C4FA9A62232505010024D8C3 /* ViewController.swift in Sources */,
 				C4255E32234FC12100918EAC /* OutputTableViewCell.swift in Sources */,
+				C4AD949F2370AC28002F0120 /* Model.xcdatamodeld in Sources */,
+				C4AD949C2370AC0A002F0120 /* CoreDataHelper.swift in Sources */,
 				C4BF209423281D1A005DA87C /* TableViewCell.swift in Sources */,
 				C4FA9A722325052C0024D8C3 /* Response.swift in Sources */,
 				C4FA9A60232505010024D8C3 /* AppDelegate.swift in Sources */,
@@ -400,6 +408,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C4AD949D2370AC28002F0120 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4AD949E2370AC28002F0120 /* Model.xcdatamodel */,
+			);
+			currentVersion = C4AD949E2370AC28002F0120 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C4FA9A54232505010024D8C3 /* Project object */;
 }

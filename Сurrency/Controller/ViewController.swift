@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
     //MARK: - Properties
@@ -16,6 +17,7 @@ class ViewController: UIViewController {
     private let refreshConrol = UIRefreshControl()
     private var myCurrency: Response?
     private var data = 0.0
+    var new = 0.0
     //MARK:- Update data
     private func updateData() {
         NetworkManager.shared.getCurrentCurrency {
@@ -42,6 +44,12 @@ class ViewController: UIViewController {
         tableView?.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: identifier)
         tableView?.register(UINib(nibName: "OutputTableViewCell", bundle: nil), forCellReuseIdentifier: outputIdentifier)
         tableView.rowHeight = UITableView.automaticDimension
+        CoreDataHelper.coreDatHelper.saveValue(value: 99.00)
+        CoreDataHelper.coreDatHelper.fetchValue(complition: {
+            (data) in
+            print(data)
+        })
+        CoreDataHelper.coreDatHelper.timeCheker()
     }
     //MARK: - Update data
     @objc private func updateTable() {

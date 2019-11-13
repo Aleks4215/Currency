@@ -7,13 +7,14 @@
 //
 
 import Foundation
+import CoreData
 
 class NetworkManager {
     
     private init() {}
     static let shared = NetworkManager()
     
-    private let apikey = "Your Api Key"
+    private let apikey = "71f3bc8d41181084e31b"
     private let url = "https://free.currconv.com/api/v7/convert"
     
     func getCurrentCurrency(complition: @escaping (Response)->Void) {
